@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+button{
+  color: rgb(229 212 216);
+  font-weight: 600;
+  float: right;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(17 9 11);
+  padding: 12px 10px;
+  margin-top: -50px;
+}
+button:hover{
+  transition: 200ms;
+ scale:1.03;
+ color: white;
+ background-color: rgba(44, 19, 4, 0.911);
+}
+.column-1{
+  height: 100%;
+  float: left;
+  width: 90%;
+}
+.column-2{
+  float: right;
+  width: 10%;
+  padding: 0px 31px;
+}
+.row{
+  height: 50px;
+  padding: 20px 50px 0px 30px ;
+}
+.logo{
+  font-size: 25px;
+  font-weight: 500;
+}
+.box{
+  background-image: linear-gradient(to right,red,orange);
+  width: 100%;
+  color: rgb(17, 9, 11);
+  height: 75px;
+  padding:20px;
+}
+
+.box-2{
+  margin-left: 100px;
+}
+
+.avatar{
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0,0,0);
+}
+
+.project{
+  display: flex;
+}
+.column-3{
+  float: left !important;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 30px;
+  align-items: center;
+  width: 33% !important;
+}
+h2{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+
+.profile {
+  border: 1.5px initial rgba(236, 228, 232, 0.877);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border-radius: 25px;
+  max-width: 300px;
+  margin: 20px 50px;
+  text-align: center;
+  font-family: arial;
+  padding: 40px;
+  background-image: linear-gradient(45deg,orange,white)
+}
+
+.profile:hover{
+  transition:400ms;
+  box-shadow: 0 8px 16px 0 rgba(90, 12, 58, 0.582);
+  transform: translateY(-10px);
+}
+.email {
+  color: rgb(65, 22, 90);
+  font-size: 18px;
+  overflow-wrap: anywhere;
+}
+.name{
+  font-size:25px;
+  font-weight: bold;
+  color: rgb(160, 33, 86);
+}
+.loader{
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 26px;
+}
+
+@media screen and (max-width: 600px) {
+  .profile{
+    width: 100%;
+    display: block;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 26px;
+  }
+
+  .name{
+    font-size:medium;
+  }
+  .column-3{
+    float: left;
+    margin-left: 60px;
+  }
+
+  .email{
+    font-size: small;
+  }
+
+  .loader{
+    align-self: center;
+    margin: auto;
+    width:100%;
+  }
+  
+  
+}
